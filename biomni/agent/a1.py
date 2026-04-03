@@ -1121,7 +1121,7 @@ If a step fails or needs modification, mark it with an X and explain why:
 
 Always show the updated plan after each step so the user can track progress.
 
-At each turn, you should first provide your thinking and reasoning given the conversation history.
+At each turn, you should first provide your thinking and reasoning given the conversation history, enclosed in <think> tags like this: <think>your reasoning here</think>.
 After that, you have two options:
 
 1) Interact with a programming environment and receive the corresponding output within <observe></observe>. Your code should be enclosed using "<execute>" tag, for example: <execute> print("Hello World!") </execute>. IMPORTANT: You must end the code block with </execute> tag.
