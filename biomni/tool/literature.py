@@ -254,7 +254,7 @@ def advanced_web_search_claude(
         api_key = os.getenv("ANTHROPIC_API_KEY")
 
     if "claude" not in model:
-        raise ValueError("Model must be a Claude model.")
+        return f"Web search unavailable: advanced_web_search_claude requires a Claude model but got '{model}'. Use a different search tool.", [], []
 
     if not api_key:
         raise ValueError("Set your api_key explicitly.")
